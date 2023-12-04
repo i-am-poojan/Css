@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex</title>
+    <style>
+    /* Parents tag  
+        Display (flex,inline-flex), 
+        Flex-direction (row,row-reverse,column,column-reverse), 
+        flex-wrap (nowrap,wrap,wrap-reverse) ,
+        Justify-content (flex-start,flex-end,center,space-between,space-around,space-evenly) ,
+        align-items (center,flex-start,flex-end,baseline,stretch),
+        align-content (flex-start,flex-end,center,space-between,space-around,stretch)
+        gap
+    */
+      
+    /* children tag -- order , flex-grow , flex-basis , flex-shrink , align-self */
+
+      *{
+        margin:0;
+        padding:0;
+      }
+      .container {
+        height: 100vh; /*Hight is require when you can perform align-item tag */
+        display: flex;
+        flex-direction: row;
+        /* flex-wrap: wrap; */
+        
+        /* justify-content: center; */
+        /* align-items: stretch; */
+
+        /* align-content work when i have use flex-wrap:wrap */
+        /* align-content: space-around; */
+      }
+      
+      .children {
+        text-align: center;
+        font-size: xx-large;
+        width: 200px;
+        height: 200px; /* when u can use align-item:stretch than not require height*/
+        background-color: yellowgreen;
+        /* margin: 2px; */
+      }
+      /* .children:first-child{
+        background-color: red;
+      }
+      .children:last-child{
+        background-color: aqua;
+      }
+      .children:nth-child(2)
+      {background-color: coral;} */
+      
+      /* .children:nth-child(odd){
+        background-color: red;
+      }
+
+      h2::first-letter{
+        color: red;
+        font-size: 32px;
+      } */
+/* 
+      .children:nth-child(4){
+        order: -1;
+      }
+      .children:nth-child(1){
+        order:-2;
+      } */
+
+      /* .children:first-child{
+        flex-shrink: 0;
+      } */
+
+      /* .children:nth-child(2){
+        flex-grow: 1;
+      } */
+
+      .children{
+        flex-basis: 20%;
+      }
+      .children:nth-child(1){
+        align-self: center;
+      }
+      .children:nth-child(3){
+        align-self: self-end;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <h2>Hi How are you!</h2> -->
+    <div class="container">
+      <div class="children">1</div>
+      <div class="children">2</div>
+      <div class="children">3</div>
+      <div class="children">4</div>
+    </div>
+
+</body>
+</html>
