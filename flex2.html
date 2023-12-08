@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Article</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color:lightgreen;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .container {
+        width: 60vw;
+        height: 40vh;
+        border-radius: 25px;
+        display: flex;
+        overflow: hidden;
+        background-color: wheat;
+      }
+
+      .container1 {
+        flex: 0 0 40%;
+        width: 100%;
+        height: 100%;
+      }
+
+      .container1 img {
+      
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 100%;
+      }
+
+      .container2{
+        margin: 30px;
+      }
+      .container2_heading{
+        font-size: 14px;
+        font-family: Arial, Helvetica, serif;
+        margin-bottom: 10px;
+      }
+      .conatiner2 .conatiner2_text{
+        color:rgb(52, 51, 51);
+        font-size: 8px;
+        margin-bottom: 10px;
+      }
+      .container2_status_profile img{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+      .conainer2_status{
+        display: flex;
+        margin-top: 25px;
+        align-items: center;
+        position:relative;
+      }
+      .container2_status_name_date{
+        margin-left: 20px;
+      }
+      .container2_status_name_date h2{
+        font-size: 14px;
+      }
+      .container2_status_name_date h3{
+        font-size: 15px;
+        color:rgb(52,51,51);
+      }
+      .container2_status_share{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background: lightsteelblue;
+        border-radius: 50%;
+        right: 0;
+      }
+      @media screen and (max-width:1289px) {
+        .conainer2_status{
+      
+        margin-top: 15px;
+      }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="container1">
+        <img src="Assets/article/images/drawers.jpg" alt="" />
+      </div>
+      <div class="container2">
+        <div class="container2_heading">
+          <h1>
+            Shift the overall look and feel by adding these wonderful touches to
+            furniture in your home
+          </h1>
+        </div>
+        <div class="container2_text">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+            delectus officia est dolorem nemo et veniam voluptates asperiores
+            alias totam? Temporibus totam obcaecati cupiditate modi, ipsum ea?
+            Minus, facilis deserunt.
+          </p>
+        </div>
+        <div class="conainer2_status">
+          <div class="container2_status_profile">
+            <img src="Assets/article/images/avatar-michelle.jpg" alt="" />
+          </div>
+          <div class="container2_status_name_date">
+            <h2>Michelle Appleton</h2>
+            <h3>28 Jun 2020</h3>
+          </div>
+          <div class="container2_status_share">
+            <img src="Assets/article/images/icon-share.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

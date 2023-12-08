@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        .wrapper{
+            display: grid;
+            /* grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); */
+            grid-template-columns: repeat(3,1fr);
+            /* grid-template-columns: repeat(auto-fill,minmax(200px,1fr)); */
+            gap: 10px;
+        }
+        .box{
+            background-color: tomato;
+        } 
+    </style> -->
+    <style>
+        .wrapper{
+            display: grid;
+            grid-template: "logo menu menu" 1fr 
+                            "banner banner aside" 1fr
+                            "banner banner aside" 1fr 
+                            "heading discription aside" 1fr 
+                            "Task1 Task2 Task3" 1fr;
+            gap: 10px;
+            height: 100vh;
+        }
+        .box{
+            background-color:lightgreen;
+        }
+        .box:nth-child(1){
+            grid-area: logo;
+        }
+        .box:nth-child(2){
+            grid-area: menu;
+        }
+        .box:nth-child(3){
+            grid-area: banner;
+        }
+        .box:nth-child(4){
+            grid-area: aside;
+        }
+        .box:nth-child(5){
+            grid-area: heading;
+        }
+        .box:nth-child(6){
+            grid-area: discription;
+        }
+        .box:nth-child(7){
+            grid-area: Task1;
+        }
+        .box:nth-child(8){
+            grid-area: Task2;
+        }
+        .box:nth-child(9){
+            grid-area: Task3;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box">logo</div>
+        <div class="box">menu</div>
+        <div class="box">banner</div>
+        <div class="box">aside</div>
+        <div class="box">heading</div>
+        <div class="box">discription</div>
+        <div class="box">Task1</div>
+        <div class="box">Task2</div>
+        <div class="box">Task3</div>
+    </div>
+</body>
+</html>
